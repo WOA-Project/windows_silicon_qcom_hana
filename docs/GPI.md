@@ -17,53 +17,53 @@ The Qualcomm Technologies Incorporated Mobile Testing Platform for SM8150 (MTP81
 
 Their configuration and GPII assignment are as follows:
 
-| QUP  | GPII | Bus  | Operation Mode |
-|------|------|------|----------------|
-| QUP0 | 0    |      |                |
-| QUP0 | 1    | SPI4 | GPI            |
-| QUP0 | 2    |      |                |
-| QUP0 | 3    |      |                |
-| QUP0 | 4    | I2C5 | FIFO           |
-| QUP0 | 5    |      |                |
-| QUP0 | 6    |      |                |
-| QUP0 | 7    | I2C8 | FIFO           |
-| QUP0 | 8    |      |                |
-| QUP0 | 9    |      |                |
-| QUP0 | 10   |      |                |
-| QUP0 | 11   |      |                |
-| QUP0 | 12   |      |                |
+| QUP  | GPII | Clients | Bus  | Operation Mode | Notes                       |
+|------|------|---------|------|----------------|-----------------------------|
+| QUP0 | 0    |         |      |                |                             |
+| QUP0 | 1    | HLOS    | SPI4 | GPI            | CODEC-WCD936x / WCD9340 SPI |
+| QUP0 | 2    |         |      |                |                             |
+| QUP0 | 3    |         |      |                |                             |
+| QUP0 | 4    | HLOS    | I2C5 | FIFO           | FSA4480 / SMB1355 / SMB1390 |
+| QUP0 | 5    |         |      |                |                             |
+| QUP0 | 6    |         |      |                |                             |
+| QUP0 | 7    | HLOS    | I2C8 | FIFO           | OEM Dock I/O                |
+| QUP0 | 8    |         |      |                |                             |
+| QUP0 | 9    |         |      |                |                             |
+| QUP0 | 10   |         |      |                |                             |
+| QUP0 | 11   |         |      |                |                             |
+| QUP0 | 12   |         |      |                |                             |
 
-| QUP  | GPII | Bus  | Operation Mode |
-|------|------|------|----------------|
-| QUP1 | 0    |      |                |
-| QUP1 | 1    | IC10 | FIFO           |
-| QUP1 | 2    |      |                |
-| QUP1 | 3    | UARD | GPI            |
-| QUP1 | 4    | UR14 | GPI            |
-| QUP1 | 5    |      |                |
-| QUP1 | 6    |      |                |
-| QUP1 | 7    |      |                |
-| QUP1 | 8    |      |                |
-| QUP1 | 9    |      |                |
-| QUP1 | 10   |      |                |
-| QUP1 | 11   |      |                |
-| QUP1 | 12   |      |                |
+| QUP  | GPII | Clients | Bus  | Operation Mode | Notes                       |
+|------|------|---------|------|----------------|-----------------------------|
+| QUP1 | 0    |         |      |                |                             |
+| QUP1 | 1    | HLOS    | IC10 | FIFO           | NFC Sensor                  |
+| QUP1 | 2    |         |      |                |                             |
+| QUP1 | 3    | HLOS    | UARD | GPI            | UART Debug port             |
+| QUP1 | 4    | HLOS    | UR14 | GPI            | Housekeeping (GPIOs 83, 84) |
+| QUP1 | 5    |         |      |                |                             |
+| QUP1 | 6    |         |      |                |                             |
+| QUP1 | 7    |         |      |                |                             |
+| QUP1 | 8    |         |      |                |                             |
+| QUP1 | 9    |         |      |                |                             |
+| QUP1 | 10   |         |      |                |                             |
+| QUP1 | 11   |         |      |                |                             |
+| QUP1 | 12   |         |      |                |                             |
 
-| QUP  | GPII | Bus  | Operation Mode |
-|------|------|------|----------------|
-| QUP2 | 0    |      |                |
-| QUP2 | 1    | UR18 | GPI            |
-| QUP2 | 2    |      |                |
-| QUP2 | 3    | UR20 | GPI            |
-| QUP2 | 4    |      |                |
-| QUP2 | 5    |      |                |
-| QUP2 | 6    |      |                |
-| QUP2 | 7    |      |                |
-| QUP2 | 8    |      |                |
-| QUP2 | 9    |      |                |
-| QUP2 | 10   |      |                |
-| QUP2 | 11   |      |                |
-| QUP2 | 12   |      |                |
+| QUP  | GPII | Clients | Bus  | Operation Mode | Notes                       |
+|------|------|---------|------|----------------|-----------------------------|
+| QUP2 | 0    |         |      |                |                             |
+| QUP2 | 1    | HLOS    | UR18 | GPI            | attached to BT SOC          |
+| QUP2 | 2    |         |      |                |                             |
+| QUP2 | 3    | HLOS    | UR20 | GPI            | HS - 5G (GPIOs 29, 30)      |
+| QUP2 | 4    |         |      |                |                             |
+| QUP2 | 5    |         |      |                |                             |
+| QUP2 | 6    |         |      |                |                             |
+| QUP2 | 7    |         |      |                |                             |
+| QUP2 | 8    |         |      |                |                             |
+| QUP2 | 9    |         |      |                |                             |
+| QUP2 | 10   |         |      |                |                             |
+| QUP2 | 11   |         |      |                |                             |
+| QUP2 | 12   |         |      |                |                             |
 
 And is reflected in driver configuration as such:
 
