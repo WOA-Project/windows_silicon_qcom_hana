@@ -34,7 +34,6 @@ And with the following configurations:
 - Battery Power Management Stack extensibility for Fuel Gauges only
 - Bluetooth Handset Free Phone audio routing
 - Camera Sensors
-- Command Mode MIPI DSI Display Panels with Display Stream Compression **turned off** (Older driver versions can work here (WDDM 2.6))
 - CPHY Mode
 - Display Out over Type-C (blocked by correct PHY TypeC detection on PM8150B)
 - DSP based NPU
@@ -86,3 +85,4 @@ For preserving charset encoding, please checkout with using:
 ```
 git clone -c core.autocrlf=false https://github.com/WOA-Project/windows_silicon_qcom_hana
 ```
+
